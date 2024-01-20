@@ -1,0 +1,182 @@
+body {
+	background-image: url("assets/bg.jpg");
+	background-color: #1d1d1d;
+	font-family: 'MS Gothic', sans-serif;
+	color: white;
+	background-attachment: fixed;
+}
+
+.topBar {
+	background-color: rgba(5, 5, 5, 0.7);
+	position: fixed; /* Fixed position */
+	top: 0; /* Align with the top of the viewport */
+	left: 0; /* Align with the left of the viewport */
+	right: 0; /* Align with the right of the viewport */
+	height: 10px;
+	padding: 10px;
+	border: 1.5px solid black;
+	text-align: right;
+	display: flex;
+	color: gray;
+}
+
+.bottomBar {
+    position: fixed;
+    background-color: rgba(5, 5, 5, 0.7);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid black;
+}
+
+
+.topBar p {
+  margin: 0; /* Remove default margin of <p> element */
+}
+
+.main {
+
+
+}
+
+.mainBox {
+	background-color: rgba(1, 1, 1, 0.7);
+	width: 600px;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 1px;
+	margin-right: 10px;
+}
+
+.sidebarContainer {
+
+}
+
+.sidebar {
+	background-color: rgba(1, 1, 1, 0.7);
+	width: 200px;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 1px;
+	height: auto;
+	margin-bottom: 10px;
+	
+
+}
+.adSidebar {
+	background-color: rgba(1, 1, 1, 0.7);
+	width: 200px;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 1px;
+	height: auto;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.sidebarTransparent {
+	width: 200px;
+	padding: 10px;
+	margin: 1px;
+	height: auto;
+
+}
+
+.container {
+ 	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+p {
+	font-size: 12px;
+}
+
+li {
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 20px;
+	text-shadow: 0 0 10px rgba(66, 135, 245, 0.8);
+  	background: -webkit-linear-gradient(#7E85EB, #458cff);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translate(-3px, -2px) rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    10% {
+        transform: translate(3px, 2px) rotate(0.5deg);
+        filter: hue-rotate(36deg);
+    }
+    20% {
+        transform: translate(-2px, 1px) rotate(-0.1deg);
+        filter: hue-rotate(72deg);
+    }
+    30% {
+        transform: translate(1px, -3px) rotate(0.1deg);
+        filter: hue-rotate(108deg);
+    }
+    40% {
+        transform: translate(-1px, 2px) rotate(-0.1deg);
+        filter: hue-rotate(144deg);
+    }
+    50% {
+        transform: translate(3px, -1px) rotate(0deg);
+        filter: hue-rotate(180deg);
+    }
+    60% {
+        transform: translate(-2px, -3px) rotate(0.1deg);
+        filter: hue-rotate(216deg);
+    }
+    70% {
+        transform: translate(2px, 1px) rotate(-0.1deg);
+        filter: hue-rotate(252deg); /* Reduced rotation angle */
+    }
+    80% {
+        transform: translate(-1px, -2px) rotate(0.1deg);
+        filter: hue-rotate(288deg);
+    }
+    90% {
+        transform: translate(3px, 2px) rotate(-1deg);
+        filter: hue-rotate(324deg);
+    }
+    100% {
+        transform: translate(-3px, -2px) rotate(0deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+pre {
+    font-size: 20px;
+    text-shadow: 0 0 10px rgba(66, 135, 245, 1); /* Increased blur radius and opacity */
+    background: -webkit-linear-gradient(#7E85EB, #458cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: pre-wrap;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    padding: 20px; /* Add padding for better readability */
+    animation: wiggle 4s infinite; /* Adjust the animation duration as needed */
+}
+
+
+
+a {
+	color: white;
+}
+
+img {
+border: 1px solid white;
+}
+
