@@ -1,10 +1,106 @@
 body {
-	background-image: url("assets/bg.jpg");
-	background-color: #1d1d1d;
-	font-family: 'MS Gothic', sans-serif;
+	background-color: #111111;
+	font-family: 'MS PGOTHIC', sans-serif;
 	color: white;
 	background-attachment: fixed;
+	overflow-x: hidden;
+	
+	
+background: url("assets/bg.png") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
+
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none; /* Add this line to make clicks pass through */
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+
+textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+    }
+
 
 .topBar {
 	background-color: rgba(5, 5, 5, 0.7);
@@ -47,10 +143,11 @@ body {
 .mainBox {
 	background-color: rgba(1, 1, 1, 0.7);
 	width: 600px;
-	border: 2px solid black;
+	border: 1px solid white;
 	padding: 10px;
 	margin: 1px;
 	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 .sidebarContainer {
@@ -60,18 +157,30 @@ body {
 .sidebar {
 	background-color: rgba(1, 1, 1, 0.7);
 	width: 200px;
-	border: 2px solid black;
+	border: 1px solid white;
+
 	padding: 10px;
 	margin: 1px;
 	height: auto;
 	margin-bottom: 10px;
 	
-
+    list-style: none;
 }
+
+ul {
+	list-style: none;
+}
+
+li:nth-child(even) {
+  background-color: 
+#121212;
+}
+
+
 .adSidebar {
 	background-color: rgba(1, 1, 1, 0.7);
 	width: 200px;
-	border: 2px solid black;
+	border: 1px solid white;
 	padding: 10px;
 	margin: 1px;
 	height: auto;
@@ -97,17 +206,22 @@ p {
 	font-size: 12px;
 }
 
+ textarea {
+      resize: vertical;
+    }
+
 li {
 	font-size: 12px;
 }
 
 h1 {
-	font-size: 20px;
-	text-shadow: 0 0 10px rgba(66, 135, 245, 0.8);
-  	background: -webkit-linear-gradient(#7E85EB, #458cff);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+  font-size: 10px;
+  text-shadow: 0 0 20px rgba(66, 135, 245, 1); /* Increased blur radius and alpha channel value */
+  background: -webkit-linear-gradient(#7E85EB, #458cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white; /* Change this line to set text color to white */
 }
+
 
 @keyframes wiggle {
     0% {
