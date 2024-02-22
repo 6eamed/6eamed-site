@@ -21,6 +21,24 @@ background: url("assets/bg.png") repeat 0 0;
   animation-timing-function: linear;
 }
 
+    #sprite {
+        position: relative;
+        top: 130px;
+		right: 200px;
+    }
+
+#info {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+		font-family: 'MS PGOTHIC', sans-serif;
+		padding-top: 35px;
+		color: #33ff00;
+}
+
 @-webkit-keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
@@ -154,6 +172,11 @@ textarea {
 
 }
 
+.leftsidebarContainer {
+    flex: 0 0 auto;
+    order: -1; /* This moves the element to the beginning of the flex container */
+	margin-right: 10px;
+}
 .sidebar {
 	background-color: rgba(1, 1, 1, 0.7);
 	width: 200px;
@@ -166,6 +189,8 @@ textarea {
 	
     list-style: none;
 }
+
+
 
 ul {
 	list-style: none;
@@ -281,7 +306,7 @@ pre {
     margin: 0 auto;
     max-width: 800px; /* Adjust the maximum width as needed */
     padding: 20px; /* Add padding for better readability */
-    animation: wiggle 4s infinite; /* Adjust the animation duration as needed */
+    animation: wiggle 2s infinite; /* Adjust the animation duration as needed */
 }
 
 
@@ -294,3 +319,10 @@ img {
 border: 1px solid white;
 }
 
+#lastPlayed {
+        text-align: center; /* Center align the content */
+    }
+    #lastPlayed img {
+        display: block; /* Make sure the image is centered properly */
+        margin: 0 auto; /* Center the image horizontally */
+    }
